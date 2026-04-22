@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — SparkTech</title>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">S</div>
+      <span>Spark<strong>Tech</strong></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="faq.html" class="active">FAQ</a>
+    </nav>
+    <a href="quote.html" class="btn-primary">Get a Quote →</a>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="quote.html">Get a Quote</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <h1>Frequently Asked Questions</h1>
+  <p>Everything schools and individuals want to know before purchasing from SparkTech.</p>
+</section>
+
+<section class="faq-page">
+  <div class="container">
+
+    <div class="faq-list">
+
+      <!-- ABOUT CHROMEBOOKS -->
+      <div style="margin-bottom:32px;">
+        <div class="section-label">About Chromebooks</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What exactly is a Chromebook?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>A Chromebook is a laptop that runs ChromeOS — Google's cloud-first operating system. Instead of Windows or macOS, it uses a lightweight interface designed around Google apps like Google Classroom, Google Docs, Gmail, and the Chrome browser. Chromebooks are faster to boot, simpler to manage, and generally more affordable than traditional laptops.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Can Chromebooks run Microsoft Word or Windows software?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Chromebooks do not run Windows software natively. However, they have access to Google Workspace apps (Docs, Sheets, Slides) which function very similarly to Microsoft Office. Many Chromebooks can also run Android apps from the Play Store. If your school specifically needs Windows applications, we'll tell you honestly and help you find the right solution.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Do Chromebooks work without internet?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes. While Chromebooks are optimized for cloud use, many apps — including Google Docs, Sheets, and Slides — have offline modes. Students can work without internet and sync when a connection is available. For schools with limited connectivity, this makes Chromebooks a very practical choice.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Why are Chromebooks better than regular laptops for schools?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Three main reasons: (1) Cost — Chromebooks deliver solid performance at a lower price than Windows laptops. (2) Management — IT admins can manage hundreds of Chromebooks from a single dashboard, pushing updates and policies remotely. (3) Durability — most education-focused Chromebooks meet military-grade durability standards, designed specifically for classroom environments.</p>
+        </div>
+      </div>
+
+      <!-- PRICING -->
+      <div style="margin: 40px 0 32px;">
+        <div class="section-label">Pricing & Payment</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What is your price range?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Our Chromebooks range from ₦100,000 to ₦230,000 depending on the model, screen size, storage, and whether it has a touchscreen. Standard classroom models start at ₦100,000. Premium high-storage touchscreen models go up to ₦230,000. School bundle pricing is available for orders of 20+ units.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Do you offer discounts for bulk orders?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes. We have tiered pricing for schools: 20–50 units, 50–100 units, and 100+ units each come with progressively better rates. For very large orders (100+ units), we offer fully custom pricing that includes accessories, deployment support, and extended warranty options. Contact us for a custom quote.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What payment methods do you accept?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>We accept bank transfers, and for verified schools and institutions, we can accommodate installment payment structures for large orders. We issue proper invoices, receipts, and purchase agreements for every transaction — so your procurement records are always clean and compliant.</p>
+        </div>
+      </div>
+
+      <!-- WARRANTY & SUPPORT -->
+      <div style="margin: 40px 0 32px;">
+        <div class="section-label">Warranty & Support</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What warranty do your Chromebooks come with?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>All our Chromebooks come with at least a 1-year warranty. Premium models and bundle packages come with extended warranty options up to 3 years. We provide full documentation with every sale, so you always have proof of purchase and warranty coverage for your records.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What happens if a device develops a fault?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Contact us immediately. Depending on the nature of the fault and when it occurred, we'll arrange a repair, replacement, or refund under the warranty terms. We have a dedicated support line for schools with active device contracts. We don't hide after the sale — we're available throughout the device's lifespan.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Do you help with setup and deployment?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, for bulk orders we offer deployment support — including enrolling devices into Google Admin Console, setting up student accounts, and configuring devices for your school's specific needs. This is available as part of our School Bundle packages or as an add-on service for standard orders.</p>
+        </div>
+      </div>
+
+      <!-- DELIVERY -->
+      <div style="margin: 40px 0 32px;">
+        <div class="section-label">Delivery & Logistics</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Do you deliver nationwide?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes. We deliver to all 36 states and the FCT. Delivery timelines depend on your location — Lagos and Ogun state orders typically arrive within 1–2 business days. Orders to other states typically arrive within 3–5 business days. Large bulk orders may require additional lead time for packaging and logistics coordination.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          How do I place an order?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>The easiest way is to fill out our quote request form. Tell us what model you're interested in, how many units you need, and your delivery location — we'll respond with a formal quote within 24 hours. You can also reach us directly by phone or WhatsApp at +234 905 505 0974.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- STILL HAVE QUESTIONS -->
+    <div style="text-align:center; margin-top:64px; padding:48px; background:var(--teal-bg); border-radius:var(--radius); border:1px solid #99f6e4;">
+      <h2 style="margin-bottom:12px;">Still have a question?</h2>
+      <p style="color:var(--gray-600); margin-bottom:28px;">Our team is happy to answer anything not covered here. Reach out directly.</p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="quote.html" class="btn-primary">Request a Quote</a>
+        <a href="tel:+2349055050974" class="btn-outline-teal">Call Us Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-mark">S</div>
+        <span>Spark<strong>Tech</strong></span>
+      </div>
+      <p>Nigeria's trusted Chromebook supplier for schools and institutions.</p>
+      <div class="socials">
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="quote.html">Get a Quote</a>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <a href="products.html">Standard Chromebooks</a>
+      <a href="products.html">Touchscreen Chromebooks</a>
+      <a href="products.html">High Storage Models</a>
+      <a href="products.html">Bundle Packages</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p>📧 sales@sparktech.ng</p>
+      <p>📞 +234 905 505 0974</p>
+      <p>📍 Lagos, Nigeria</p>
+      <p>⏰ Mon–Sat, 8am–6pm</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 SparkTech Nigeria. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+</script>
+</body>
+</html>

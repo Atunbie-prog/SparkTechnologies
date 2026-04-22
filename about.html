@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — SparkTech</title>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">S</div>
+      <span>Spark<strong>Tech</strong></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <a href="quote.html" class="btn-primary">Get a Quote →</a>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="quote.html">Get a Quote</a>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <h1>Our Chromebook Catalog</h1>
+  <p>Premium certified Chromebooks for Nigerian schools and individuals. Every device comes with full warranty and documentation.</p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-page">
+  <div class="container">
+
+    <!-- FILTER -->
+    <div class="products-filter">
+      <button class="filter-btn active" onclick="filterProducts('all', this)">All Products</button>
+      <button class="filter-btn" onclick="filterProducts('standard', this)">Standard</button>
+      <button class="filter-btn" onclick="filterProducts('touchscreen', this)">Touchscreen</button>
+      <button class="filter-btn" onclick="filterProducts('high-storage', this)">High Storage</button>
+      <button class="filter-btn" onclick="filterProducts('bundle', this)">School Bundles</button>
+    </div>
+
+    <!-- STANDARD CHROMEBOOKS -->
+    <div class="products-category" data-category="standard">
+      <h2 class="category-title">
+        Standard Chromebooks
+        <span class="category-tag">Best for everyday classroom use</span>
+      </h2>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=500&q=80" alt="HP Chromebook 11" />
+            <span class="product-badge">Popular</span>
+          </div>
+          <div class="product-card-info">
+            <h3>HP Chromebook 11</h3>
+            <div class="specs">
+              <span class="spec-tag">11.6" HD</span>
+              <span class="spec-tag">4GB RAM</span>
+              <span class="spec-tag">32GB Storage</span>
+              <span class="spec-tag">10hr Battery</span>
+            </div>
+            <div class="product-card-price">₦100,000 <span>per unit</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Request Quote</a>
+              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&q=80" alt="Lenovo Chromebook 100e" />
+            <span class="product-badge hot">Best Value</span>
+          </div>
+          <div class="product-card-info">
+            <h3>Lenovo Chromebook 100e</h3>
+            <div class="specs">
+              <span class="spec-tag">11.6" HD</span>
+              <span class="spec-tag">4GB RAM</span>
+              <span class="spec-tag">32GB Storage</span>
+              <span class="spec-tag">Rugged Build</span>
+            </div>
+            <div class="product-card-price">₦108,000 <span>per unit</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Request Quote</a>
+              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&q=80" alt="Acer Chromebook 311" />
+          </div>
+          <div class="product-card-info">
+            <h3>Acer Chromebook 311</h3>
+            <div class="specs">
+              <span class="spec-tag">11.6" HD</span>
+              <span class="spec-tag">4GB RAM</span>
+              <span class="spec-tag">32GB Storage</span>
+              <span class="spec-tag">MIL-SPEC Durable</span>
+            </div>
+            <div class="product-card-price">₦112,000 <span>per unit</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Request Quote</a>
+              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1588702547919-26089e690ecc?w=500&q=80" alt="Samsung Chromebook 4" />
+            <span class="product-badge new">New</span>
+          </div>
+          <div class="product-card-info">
+            <h3>Samsung Chromebook 4</h3>
+            <div class="specs">
+              <span class="spec-tag">11.6" HD</span>
+              <span class="spec-tag">4GB RAM</span>
+              <span class="spec-tag">32GB eMMC</span>
+              <span class="spec-tag">Fast Charge</span>
+            </div>
+            <div class="product-card-price">₦120,000 <span>per unit</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Request Quote</a>
+              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TOUCHSCREEN CHROMEBOOKS -->
+    <div class="products-category" data-category="touchscreen">
+      <h2 class="category-title">
+        Touchscreen Chromebooks
+        <span class="category-tag">Interactive learning</span>
+      </h2>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=500&q=80" alt="Lenovo Chromebook Flex 3" />
+            <span class="product-badge">2-in-1</span>
+          </div>
+          <div class="product-card-info">
+            <h3>Lenovo Chromebook Flex 3</h3>
+            <div class="specs">
+              <span class="spec-tag">11.6" Touch</span>
+              <span class="spec-tag">4GB RAM</span>
+              <span class="spec-tag">64GB Storage</span>
+              <span class="spec-tag">360° Hinge</span>
+            </div>
+            <div class="product-card-price">₦150,000 <span>per unit</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Request Quote</a>
+              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1542393545-10f5cde2c810?w=500&q=80" alt="HP Chromebook x360" />
+            <span class="product-badge hot">Top Pick</span>
+          </div>
+          <div class="product-card-info">
+            <h3>HP Chromebook x360 11</h3>
+            <div class="specs">
+              <span class="spec-tag">11.6" Touch IPS</span>
+              <span class="spec-tag">8GB RAM</span>
+              <span class="spec-tag">64GB Storage</span>
+              <span class="spec-tag">Stylus Ready</span>
+            </div>
+            <div class="product-card-price">₦170,000 <span>per unit</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Request Quote</a>
+              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=500&q=80" alt="Acer Chromebook Spin 311" />
+          </div>
+          <div class="product-card-info">
+            <h3>Acer Chromebook Spin 311</h3>
+            <div class="specs">
+              <span class="spec-tag">11.6" Touch</span>
+              <span class="spec-tag">4GB RAM</span>
+              <span class="spec-tag">32GB Storage</span>
+              <span class="spec-tag">Convertible</span>
+            </div>
+            <div class="product-card-price">₦155,000 <span>per unit</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Request Quote</a>
+              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=500&q=80" alt="ASUS Chromebook Flip" />
+            <span class="product-badge new">New</span>
+          </div>
+          <div class="product-card-info">
+            <h3>ASUS Chromebook Flip C214</h3>
+            <div class="specs">
+              <span class="spec-tag">11.6" Touch IPS</span>
+              <span class="spec-tag">4GB RAM</span>
+              <span class="spec-tag">32GB Storage</span>
+              <span class="spec-tag">MIL-SPEC</span>
+            </div>
+            <div class="product-card-price">₦162,000 <span>per unit</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Request Quote</a>
+              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- HIGH STORAGE -->
+    <div class="products-category" data-category="high-storage">
+      <h2 class="category-title">
+        High Storage Models
+        <span class="category-tag">For heavy use & content creation</span>
+      </h2>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=500&q=80" alt="HP Chromebook 14" />
+          </div>
+          <div class="product-card-info">
+            <h3>HP Chromebook 14</h3>
+            <div class="specs">
+              <span class="spec-tag">14" FHD</span>
+              <span class="spec-tag">8GB RAM</span>
+              <span class="spec-tag">128GB Storage</span>
+              <span class="spec-tag">Intel Core i3</span>
+            </div>
+            <div class="product-card-price">₦185,000 <span>per unit</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Request Quote</a>
+              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1593642532454-e138e28a63f4?w=500&q=80" alt="Lenovo Chromebook 5" />
+            <span class="product-badge hot">Premium</span>
+          </div>
+          <div class="product-card-info">
+            <h3>Lenovo IdeaPad Chromebook 5</h3>
+            <div class="specs">
+              <span class="spec-tag">13.3" FHD IPS</span>
+              <span class="spec-tag">8GB RAM</span>
+              <span class="spec-tag">128GB SSD</span>
+              <span class="spec-tag">Backlit KB</span>
+            </div>
+            <div class="product-card-price">₦200,000 <span>per unit</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Request Quote</a>
+              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500&q=80" alt="ASUS Chromebook CX9" />
+            <span class="product-badge new">Premium</span>
+          </div>
+          <div class="product-card-info">
+            <h3>ASUS Chromebook CX9</h3>
+            <div class="specs">
+              <span class="spec-tag">14" FHD Touch</span>
+              <span class="spec-tag">16GB RAM</span>
+              <span class="spec-tag">256GB SSD</span>
+              <span class="spec-tag">Intel Core i5</span>
+            </div>
+            <div class="product-card-price">₦230,000 <span>per unit</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Request Quote</a>
+              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BUNDLES -->
+    <div class="products-category" data-category="bundle">
+      <h2 class="category-title">
+        School Bundle Packages
+        <span class="category-tag">Best pricing for bulk orders</span>
+      </h2>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=500&q=80" alt="Starter Bundle" />
+            <span class="product-badge">20–50 Units</span>
+          </div>
+          <div class="product-card-info">
+            <h3>Starter School Bundle</h3>
+            <div class="specs">
+              <span class="spec-tag">HP Chromebook 11</span>
+              <span class="spec-tag">Carry Bags</span>
+              <span class="spec-tag">Free Setup</span>
+              <span class="spec-tag">1yr Warranty</span>
+            </div>
+            <div class="product-card-price">₦95,000 <span>/ unit (bulk)</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Get Bundle Quote</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&q=80" alt="ICT Lab Bundle" />
+            <span class="product-badge hot">Most Popular</span>
+          </div>
+          <div class="product-card-info">
+            <h3>ICT Lab Bundle</h3>
+            <div class="specs">
+              <span class="spec-tag">50–100 Units</span>
+              <span class="spec-tag">Touchscreen Models</span>
+              <span class="spec-tag">Charging Trolley</span>
+              <span class="spec-tag">Deployment Support</span>
+            </div>
+            <div class="product-card-price">₦142,000 <span>/ unit (bulk)</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Get Bundle Quote</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&q=80" alt="Full School Bundle" />
+            <span class="product-badge new">Enterprise</span>
+          </div>
+          <div class="product-card-info">
+            <h3>Full School Package</h3>
+            <div class="specs">
+              <span class="spec-tag">100+ Units</span>
+              <span class="spec-tag">Mixed Models</span>
+              <span class="spec-tag">IT Support Plan</span>
+              <span class="spec-tag">Custom Pricing</span>
+            </div>
+            <div class="product-card-price">Custom <span>pricing for 100+</span></div>
+            <div class="product-card-actions">
+              <a href="quote.html" class="btn-primary">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
+  <div class="container cta-inner">
+    <div>
+      <h2>Not Sure Which Model to Pick?</h2>
+      <p>Tell us your budget and needs — we'll recommend the perfect fit for your school.</p>
+    </div>
+    <a href="quote.html" class="btn-primary large">Talk to Us →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-mark">S</div>
+        <span>Spark<strong>Tech</strong></span>
+      </div>
+      <p>Nigeria's trusted Chromebook supplier for schools and institutions.</p>
+      <div class="socials">
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="quote.html">Get a Quote</a>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <a href="products.html">Standard Chromebooks</a>
+      <a href="products.html">Touchscreen Chromebooks</a>
+      <a href="products.html">High Storage Models</a>
+      <a href="products.html">Bundle Packages</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p>📧 sales@sparktech.ng</p>
+      <p>📞 +234 905 505 0974</p>
+      <p>📍 Lagos, Nigeria</p>
+      <p>⏰ Mon–Sat, 8am–6pm</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 SparkTech Nigeria. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+function filterProducts(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.products-category').forEach(section => {
+    if (cat === 'all' || section.dataset.category === cat) {
+      section.style.display = 'block';
+    } else {
+      section.style.display = 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>
