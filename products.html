@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Products — SparkTech</title>
-<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
   <div class="container nav">
     <a href="index.html" class="logo">
       <div class="logo-mark">S</div>
-      <span>Spark<strong>Tech</strong></span>
+      <span class="logo-text">Spark<span>Tech</span></span>
     </a>
     <nav class="nav-links">
       <a href="index.html">Home</a>
@@ -21,29 +22,28 @@
       <a href="about.html">About</a>
       <a href="faq.html">FAQ</a>
     </nav>
-    <a href="quote.html" class="btn-primary">Get a Quote →</a>
-    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <div class="nav-cta">
+      <a href="order.html" class="btn-primary">Place Order <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
     <a href="about.html">About</a>
     <a href="faq.html">FAQ</a>
-    <a href="quote.html">Get a Quote</a>
+    <a href="order.html">Place Order</a>
   </div>
 </header>
 
-<!-- PAGE HERO -->
 <section class="page-hero">
   <h1>Our Chromebook Catalog</h1>
   <p>Premium certified Chromebooks for Nigerian schools and individuals. Every device comes with full warranty and documentation.</p>
 </section>
 
-<!-- PRODUCTS -->
 <section class="products-page">
   <div class="container">
 
-    <!-- FILTER -->
     <div class="products-filter">
       <button class="filter-btn active" onclick="filterProducts('all', this)">All Products</button>
       <button class="filter-btn" onclick="filterProducts('standard', this)">Standard</button>
@@ -55,6 +55,7 @@
     <!-- STANDARD CHROMEBOOKS -->
     <div class="products-category" data-category="standard">
       <h2 class="category-title">
+        <i class="fas fa-laptop" style="color:var(--primary);font-size:1.2rem;"></i>
         Standard Chromebooks
         <span class="category-tag">Best for everyday classroom use</span>
       </h2>
@@ -75,8 +76,8 @@
             </div>
             <div class="product-card-price">₦100,000 <span>per unit</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Request Quote</a>
-              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Place Order</a>
+              <a href="order.html" class="btn-outline-teal" style="font-size:0.82rem;padding:10px 18px;">Bulk Order</a>
             </div>
           </div>
         </div>
@@ -96,8 +97,8 @@
             </div>
             <div class="product-card-price">₦108,000 <span>per unit</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Request Quote</a>
-              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Place Order</a>
+              <a href="order.html" class="btn-outline-teal" style="font-size:0.82rem;padding:10px 18px;">Bulk Order</a>
             </div>
           </div>
         </div>
@@ -116,8 +117,8 @@
             </div>
             <div class="product-card-price">₦112,000 <span>per unit</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Request Quote</a>
-              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Place Order</a>
+              <a href="order.html" class="btn-outline-teal" style="font-size:0.82rem;padding:10px 18px;">Bulk Order</a>
             </div>
           </div>
         </div>
@@ -137,8 +138,8 @@
             </div>
             <div class="product-card-price">₦120,000 <span>per unit</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Request Quote</a>
-              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Place Order </a>
+              <a href="order.html" class="btn-outline-teal" style="font-size:0.82rem;padding:10px 18px;">Bulk Order</a>
             </div>
           </div>
         </div>
@@ -149,6 +150,7 @@
     <!-- TOUCHSCREEN CHROMEBOOKS -->
     <div class="products-category" data-category="touchscreen">
       <h2 class="category-title">
+        <i class="fas fa-hand-pointer" style="color:var(--primary);font-size:1.2rem;"></i>
         Touchscreen Chromebooks
         <span class="category-tag">Interactive learning</span>
       </h2>
@@ -169,8 +171,8 @@
             </div>
             <div class="product-card-price">₦150,000 <span>per unit</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Request Quote</a>
-              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Place Order</a>
+              <a href="order.html" class="btn-outline-teal" style="font-size:0.82rem;padding:10px 18px;">Bulk Order</a>
             </div>
           </div>
         </div>
@@ -190,8 +192,8 @@
             </div>
             <div class="product-card-price">₦170,000 <span>per unit</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Request Quote</a>
-              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Place Order</a>
+              <a href="order.html" class="btn-outline-teal" style="font-size:0.82rem;padding:10px 18px;">Bulk Order</a>
             </div>
           </div>
         </div>
@@ -210,8 +212,8 @@
             </div>
             <div class="product-card-price">₦155,000 <span>per unit</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Request Quote</a>
-              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Place Order</a>
+              <a href="order.html" class="btn-outline-teal" style="font-size:0.82rem;padding:10px 18px;">Bulk Order</a>
             </div>
           </div>
         </div>
@@ -231,8 +233,8 @@
             </div>
             <div class="product-card-price">₦162,000 <span>per unit</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Request Quote</a>
-              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Place Order</a>
+              <a href="order.html" class="btn-outline-teal" style="font-size:0.82rem;padding:10px 18px;">Bulk Order</a>
             </div>
           </div>
         </div>
@@ -243,8 +245,9 @@
     <!-- HIGH STORAGE -->
     <div class="products-category" data-category="high-storage">
       <h2 class="category-title">
+        <i class="fas fa-hard-drive" style="color:var(--primary);font-size:1.2rem;"></i>
         High Storage Models
-        <span class="category-tag">For heavy use & content creation</span>
+        <span class="category-tag">For heavy use &amp; content creation</span>
       </h2>
       <div class="products-grid">
 
@@ -262,8 +265,8 @@
             </div>
             <div class="product-card-price">₦185,000 <span>per unit</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Request Quote</a>
-              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Place Order</a>
+              <a href="order.html" class="btn-outline-teal" style="font-size:0.82rem;padding:10px 18px;">Bulk Order</a>
             </div>
           </div>
         </div>
@@ -283,8 +286,8 @@
             </div>
             <div class="product-card-price">₦200,000 <span>per unit</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Request Quote</a>
-              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Request Quote</a>
+              <a href="order.html" class="btn-outline-teal" style="font-size:0.82rem;padding:10px 18px;">Bulk Order</a>
             </div>
           </div>
         </div>
@@ -304,8 +307,8 @@
             </div>
             <div class="product-card-price">₦230,000 <span>per unit</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Request Quote</a>
-              <a href="quote.html" class="btn-outline-teal">Bulk Order</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Request Quote</a>
+              <a href="order.html" class="btn-outline-teal" style="font-size:0.82rem;padding:10px 18px;">Bulk Order</a>
             </div>
           </div>
         </div>
@@ -316,6 +319,7 @@
     <!-- BUNDLES -->
     <div class="products-category" data-category="bundle">
       <h2 class="category-title">
+        <i class="fas fa-boxes-stacked" style="color:var(--primary);font-size:1.2rem;"></i>
         School Bundle Packages
         <span class="category-tag">Best pricing for bulk orders</span>
       </h2>
@@ -336,7 +340,7 @@
             </div>
             <div class="product-card-price">₦95,000 <span>/ unit (bulk)</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Get Bundle Quote</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Get Bundle Order</a>
             </div>
           </div>
         </div>
@@ -356,7 +360,7 @@
             </div>
             <div class="product-card-price">₦142,000 <span>/ unit (bulk)</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Get Bundle Quote</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Get Bundle Order</a>
             </div>
           </div>
         </div>
@@ -376,7 +380,7 @@
             </div>
             <div class="product-card-price">Custom <span>pricing for 100+</span></div>
             <div class="product-card-actions">
-              <a href="quote.html" class="btn-primary">Contact Us</a>
+              <a href="order.html" class="btn-primary" style="font-size:0.82rem;padding:10px 18px;">Contact Us</a>
             </div>
           </div>
         </div>
@@ -394,50 +398,54 @@
       <h2>Not Sure Which Model to Pick?</h2>
       <p>Tell us your budget and needs — we'll recommend the perfect fit for your school.</p>
     </div>
-    <a href="quote.html" class="btn-primary large">Talk to Us →</a>
+    <a href="order.html" class="btn-primary large">Talk to Us <i class="fas fa-arrow-right"></i></a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <div class="logo">
-        <div class="logo-mark">S</div>
-        <span>Spark<strong>Tech</strong></span>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:16px;">
+          <div class="logo-mark">S</div>
+          <span style="color:white;font-family:var(--font-display);font-weight:700;font-size:1.1rem;">Spark<strong style="color:var(--primary-light);">Tech</strong></span>
+        </div>
+        <p>Nigeria's trusted Chromebook supplier for schools and institutions.</p>
+        <div class="footer-social">
+          <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-icon" href="#"><i class="fab fa-x-twitter"></i></a>
+          <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="social-icon" href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
       </div>
-      <p>Nigeria's trusted Chromebook supplier for schools and institutions.</p>
-      <div class="socials">
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
-        <a href="#">WhatsApp</a>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="order.html">Place Order</a>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="products.html">Standard Chromebooks</a>
+        <a href="products.html">Touchscreen Chromebooks</a>
+        <a href="products.html">High Storage Models</a>
+        <a href="products.html">Bundle Packages</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>Q
+        <p><i class="fas fa-envelope"></i>sparktechnologies001@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +234 905 505 0974</p>
+        <p><i class="fas fa-location-dot"></i> Lagos, Nigeria</p>
+        <p><i class="fas fa-clock"></i> Mon–Sat, 8am–6pm</p>
       </div>
     </div>
-    <div class="footer-col">
-      <h4>Pages</h4>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About Us</a>
-      <a href="faq.html">FAQ</a>
-      <a href="quote.html">Get a Quote</a>
+    <div class="footer-bottom">
+      <span>© 2025 SparkTech Nigeria. All rights reserved.</span>
+      <span>Trusted Chromebook Supplier · Lagos, Nigeria</span>
     </div>
-    <div class="footer-col">
-      <h4>Products</h4>
-      <a href="products.html">Standard Chromebooks</a>
-      <a href="products.html">Touchscreen Chromebooks</a>
-      <a href="products.html">High Storage Models</a>
-      <a href="products.html">Bundle Packages</a>
-    </div>
-    <div class="footer-col">
-      <h4>Contact Us</h4>
-      <p>📧 sales@sparktech.ng</p>
-      <p>📞 +234 905 505 0974</p>
-      <p>📍 Lagos, Nigeria</p>
-      <p>⏰ Mon–Sat, 8am–6pm</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2025 SparkTech Nigeria. All rights reserved.</p>
   </div>
 </footer>
 
@@ -445,16 +453,11 @@
 function toggleMenu() {
   document.getElementById('mobileMenu').classList.toggle('open');
 }
-
 function filterProducts(cat, btn) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   document.querySelectorAll('.products-category').forEach(section => {
-    if (cat === 'all' || section.dataset.category === cat) {
-      section.style.display = 'block';
-    } else {
-      section.style.display = 'none';
-    }
+    section.style.display = (cat === 'all' || section.dataset.category === cat) ? 'block' : 'none';
   });
 }
 </script>
